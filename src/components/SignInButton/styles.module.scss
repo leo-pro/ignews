@@ -12,6 +12,14 @@
   color: var(--white);
   font-weight: bold;
 
+  img {
+    border-radius: 4rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--yellow-500);
+    margin-right: 0.5rem;
+  }
+
   svg {
     width: 20px;
     height: 20px;
