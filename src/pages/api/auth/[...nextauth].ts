@@ -3,7 +3,7 @@ import { query as q } from "faunadb";
 import NextAuth from "next-auth";
 import Providers from "next-auth/providers";
 
-import { fauna, getByEmail } from "../../../services/fauna";
+import { fauna } from "../../../services/fauna";
 
 export default NextAuth({
   providers: [
@@ -18,9 +18,13 @@ export default NextAuth({
       const { email } = user;
 
       try {
-        getByEmail(email as string)
-          .then((response) => console.log(response))
-          .catch((error) => console.log(error));
+        await fauna.query(
+          q.If(
+            q.Exists(q.Match(q.Index("user_by_email"), q.Casefold(email))),
+            q.Get(q.Match(q.Index("user_by_email"), q.Casefold(email))),
+            q.Create(q.Collection("users"), { data: { email } })
+          )
+        );
 
         return true;
       } catch {
