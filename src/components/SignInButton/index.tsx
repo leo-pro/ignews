@@ -10,7 +10,6 @@ export function SignInButton() {
 
   return session ? (
     <button type="button" className={styles.signInButton}>
-      {" "}
       <img src={session.user.image} alt={session.user.name} />
       {session.user.name}
       <FiX
