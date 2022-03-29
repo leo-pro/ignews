@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2 align="center">
+  IgNews - A Blog built with NextJS
+</h2>
 
-## Getting Started
+<p align="center">
+<img src="https://raw.githubusercontent.com/leo-pro/template-nextjs-styled-components/develop/public/preview.png" width="70%">
+</p>
 
-First, run the development server:
+<p>🖥️ <b>Live Demo:</b> <a href="https://boilerplate-nextjs-styled-components.vercel.app/" target="_blank">Click here</a></p>
 
-```bash
-npm run dev
-# or
-yarn dev
+## Install and Run
+
+To install and run the application, make sure that you have accounts created on Stripe and FaunaDB. 
+
+Next Steps:
+
+- Clone repository and install dependencies:
+
+```
+  git clone https://github.com/leo-pro/ignews
+  cd ignews
+  yarn or npm install
+```
+- Creating a new file <code>.env.local</code>
+
+```
+  # Stripe
+  STRIPE_SUCCESS_URL=
+  STRIPE_CANCEL_URL=
+  STRIPE_API_KEY=
+  NEXT_PUBLIC_STRIPE_PUBLIC_KEY=
+  STRIPE_WEBHOOK_SECRET=
+
+  # Github
+  GITHUB_CLIENT_ID=
+  GITHUB_CLIENT_SECRET=
+
+  # FaunaDB
+  FAUNADB_KEY=
+
+  # JWT
+  SIGNIN_KEY=
+
+  # Next Auth
+  NEXTAUTH_URL=
+
+  # Prismic CMS
+  PRISMIC_ACCESS_TOKEN=
+  PRISMIC_ENDPOINT=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Running the project into your browser at http://localhost:3000
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+  yarn dev
+  # or
+  npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Generating static build to deploy
 
-## Learn More
+```
+  yarn build
+  # or
+  npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Techs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p>
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with NextJS by [Leonardo Alves](https://www.linkedin.com/in/leonardoalvess/)
