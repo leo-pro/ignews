@@ -10,7 +10,7 @@
 
 ## Install and Run
 
-To install and run the application, make sure that you have accounts created on Stripe and FaunaDB. 
+To install and run the application, make sure that you have accounts created on Github, Stripe and FaunaDB. We'll create an app on Github to use OAuth configuration in the project with the library <code>next-auth</code>.
 
 Next Steps:
 
