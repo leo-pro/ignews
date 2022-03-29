@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/leo-pro/template-nextjs-styled-components/develop/public/preview.png" width="70%">
+<img src="https://raw.githubusercontent.com/leo-pro/ignews/main/public/images/demo.png" width="70%">
 </p>
 
 <p>🖥️ <b>Live Demo:</b> <a href="https://boilerplate-nextjs-styled-components.vercel.app/" target="_blank">Click here</a></p>
